@@ -1,0 +1,18 @@
+1. extract the zip file 
+2. open command prompt if using windows or terminal if using mac
+3. navigate to project folder in the terminal
+4. in the sentiment_analysis folder create a python virtual environment using command "python -m venv env"
+5. activate the environment using ".\myenv\Scripts\activate" if using windows. "source env/bin/activate" if using mac
+6. now, install all the dependencies using command "pip install -r requirements.txt"
+7. now type, "python train.py" to start the model and wait for 10 to 15 min depending on your internet speed as it will download all the datasets. Intial training will be slow.
+8.  after the python train.py output will come as accuracy rate percentage%. Now you are done with the training.
+9. Now run the command "python infer.py"
+8. it asks to write a review so please make sure you write a review of a movie
+9. the output will be positive or negative.
+10. if you want to use a .txt file which contains review of a movie please follow the following commands:
+	a.To use test case :
+        - python infer.py --test_case ./test-case/test_pos_review1.txt
+   To give input from the terminal:
+        - python infer.py 
+
+ 
